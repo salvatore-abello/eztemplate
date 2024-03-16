@@ -1,0 +1,1 @@
+from .eztemplate import render_template, Template
