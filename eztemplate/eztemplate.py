@@ -64,6 +64,7 @@ class SandboxedEnvironment:
         ]
 
         self.__globals = {
+            "__builtins__": {
             # Other
             "false": False,
             "null": None,
@@ -127,6 +128,7 @@ class SandboxedEnvironment:
             "euler_e": self.__external_modules["math"].e,
             "sin": self.__external_modules["math"].sin,
             "cos": self.__external_modules["math"].cos
+            }
         }
 
     @lru_cache
